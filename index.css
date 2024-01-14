@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Hedvig+Letters+Serif:opsz@12..24&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,800;0,900;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+font-family: 'Hedvig Letters Serif', serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.porfile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0,0.1);
+    position: relative;
+}
+.porfile-card::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 36%;
+    background-color: #4070f4;
+    top: 0;
+    left: 0;
+    border-radius: 24px 25px 0 0;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+}
+.profile-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+.porfile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+
+}
+.text-data .jobs{
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+.porfile-card .medi-button{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.medi-button .links{
+    display: flex;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    text-decoration: none;
+    background-color: #4070f4;
+}
+.porfile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button{
+    margin: 0 10px;
+    padding: 8px 24px;
+    color: #ffff;
+    border: none;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.buttons .button:hover{
+    background-color: #0e4bf1;
+    scale: 1.1;
+}
+.porfile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+     display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.data:last-child{
+        border-right:none;
+}
